@@ -1,6 +1,7 @@
 package com.submerge.subapicommon.service.inner;
 
 
+import com.submerge.subapicommon.model.entity.User;
 import com.submerge.subapicommon.model.vo.UserVO;
 
 /**
@@ -16,7 +17,7 @@ public interface InnerUserService {
      * 按凭证获取invoke用户
      *
      * @param accessKey 访问密钥
-     * @return {@link UserVO}
+     * @return {@link User}
      */
-    UserVO getInvokeUserByAccessKey(String accessKey);
+    User getInvokeUser(String accessKey);
 }

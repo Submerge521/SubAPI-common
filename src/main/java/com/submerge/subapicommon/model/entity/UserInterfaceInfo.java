@@ -12,9 +12,9 @@ import java.util.Date;
  * @Version: 1.0
  * @Description: 用户接口调用表
  */
-@TableName(value = "user_interface_invoke")
+@TableName(value = "user_interface_info")
 @Data
-public class UserInterfaceInvoke implements Serializable {
+public class UserInterfaceInfo implements Serializable {
     @TableField(exist = false)
     private static final long serialVersionUID = 1L;
     /**
@@ -29,13 +29,19 @@ public class UserInterfaceInvoke implements Serializable {
     /**
      * 接口id
      */
-    private Long interfaceId;
+    private Long interfaceInfoId;
     /**
      * 总调用次数
      */
-    private Long totalInvokes;
+    private Integer totalNum;
+
     /**
-     * 调用状态（0- 正常 1- 封号）
+     * 剩余调用次数
+     */
+    private Integer leftNum;
+
+    /**
+     * 状态
      */
     private Integer status;
     /**

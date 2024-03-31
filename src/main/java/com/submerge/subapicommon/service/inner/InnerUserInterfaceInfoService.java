@@ -6,7 +6,7 @@ package com.submerge.subapicommon.service.inner;
  * @Version: 1.0
  * @Description: 用户界面调用服务
  */
-public interface InnerUserInterfaceInvokeService {
+public interface InnerUserInterfaceInfoService {
 
     /**
      * 援引
@@ -17,5 +17,5 @@ public interface InnerUserInterfaceInvokeService {
      * @param reduceScore     降低分数
      * @return boolean
      */
-    boolean invoke(Long interfaceInfoId, Long userId, Integer reduceScore);
+    boolean invokeCount(Long interfaceInfoId, Long userId, Integer reduceScore);
 }
