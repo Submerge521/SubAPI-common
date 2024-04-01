@@ -45,7 +45,7 @@ public class InterfaceInfo implements Serializable {
     /**
      * 总调用次数
      */
-    private Long totalInvokes;
+    private Long totalNum;
     /**
      * 接口请求参数
      */
