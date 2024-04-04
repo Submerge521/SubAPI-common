@@ -8,7 +8,6 @@ import java.util.Date;
 
 /**
  * @Author: Submerge
- * @Date: 2023/09/04 11:31:33
  * @Version: 1.0
  * @Description: 接口信息
  */
@@ -46,7 +45,7 @@ public class InterfaceInfo implements Serializable {
     /**
      * 总调用次数
      */
-    private Integer totalNum;
+    private Long totalInvokes;
     /**
      * 接口请求参数
      */
